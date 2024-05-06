@@ -6,22 +6,19 @@ public class animationStateController : MonoBehaviour
 {
     Animator animator;
     int isWalkingHash;
-    int isRunningHash;
-
-    //new
-    int isEmottingHash;
-
-    
+    int isRunningHash;  
     // Start is called before the first frame update
+
+    //new for attack
+    int isAttackingHash;
     void Start()
     {
         animator = GetComponent<Animator>();
 
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
-
-        //new
-        isEmottingHash = Animator.StringToHash("isEmotting");
+        //attack
+        isAttackingHash = Animator.StringToHash("isAttacking");
     }
 
     // Update is called once per frame
@@ -30,9 +27,7 @@ public class animationStateController : MonoBehaviour
         //new
         bool isrunning = animator.GetBool(isRunningHash);
         bool isWalking = animator.GetBool(isWalkingHash);
-
-        //new for emote
-        bool isEmotting = animator.GetBool(isEmottingHash);
+        bool isAttacking = animator.GetBool(isAttackingHash);
 
 
         bool forwardPressed = Input.GetKey("w");
@@ -43,17 +38,8 @@ public class animationStateController : MonoBehaviour
 
         //new for running
         bool runPressed = Input.GetKey("left shift");
-        //new for emote
-        bool emotePressed = Input.GetKey("g");
-
-        //new ifs for emote
-        if(!isEmotting && !isWalking &&emotePressed){
-            animator.SetBool(isEmottingHash, true);
-        }
-
-        if(isEmotting && emotePressed){
-            animator.SetBool(isEmottingHash, false);
-        }
+        bool attackPressed = Input.GetKey("space");
+       
         
         if(!isWalking && (forwardPressed || leftwardPressed || rightwardPressed ||backwardPressed)){
             animator.SetBool(isWalkingHash, true);
@@ -71,6 +57,14 @@ public class animationStateController : MonoBehaviour
         if(isrunning && (!(forwardPressed || leftwardPressed || rightwardPressed ||backwardPressed) || !runPressed)){
             animator.SetBool(isRunningHash, false);
         }
+
+        //new for attack
+        // Attack state transitions
+        if (attackPressed && !isAttacking) // Check to ensure we don't restart the attack animation while attacking
+            animator.SetBool(isAttackingHash, true);
+
+        if (isAttacking && !attackPressed) // Optionally, make sure the attack animation plays fully before stopping
+            animator.SetBool(isAttackingHash, false);
 
     }
 }
