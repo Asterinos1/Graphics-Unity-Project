@@ -4988,8 +4988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1135716850}
-  height: 7
-  distance: 8
+  height: 8
+  distance: 6
   angle: 45
 --- !u!1 &963304086
 GameObject:
@@ -5656,6 +5656,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 65b24d220c8cbeb40a814835a4a35299, type: 2}
+    - target: {fileID: 9500000, guid: d4bc8aeee1248da43a4176631929bc9d, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6214,8 +6218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  rotationSpeed: 700
-  sprintMultiplier: 0.4
+  rotationSpeed: 1500
+  sprintMultiplier: 1.7
 --- !u!114 &1135716855
 MonoBehaviour:
   m_ObjectHideFlags: 0
