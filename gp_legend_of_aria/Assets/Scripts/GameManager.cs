@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     public enum GameState { MainMenu, Playing, GameOver }
     public GameState currentState;
 
-    // Awake is always called before any Start functions
+    // Awake is always called before any Start functions.
+    // Incase of duplicates, delete them.
     void Awake()
     {
         if (instance == null)

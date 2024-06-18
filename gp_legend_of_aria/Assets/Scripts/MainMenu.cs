@@ -19,5 +19,11 @@ public class MainMenu : MonoBehaviour
     {
         // Quit the application
         Application.Quit();
+
+        // For debbuging
+        // If we are running in the editor, simulate the quit
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 }
