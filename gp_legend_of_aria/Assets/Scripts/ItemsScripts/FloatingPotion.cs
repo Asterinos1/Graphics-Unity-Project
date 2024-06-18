@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FloatingPotion : MonoBehaviour
@@ -26,5 +28,21 @@ public class FloatingPotion : MonoBehaviour
 
         // Spinning motion
         transform.Rotate(Vector3.up, spinSpeed * Time.deltaTime);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        // Check if the colliding object is the player
+        Health healthScript = other.GetComponent<Health>();
+        if (healthScript != null && !healthScript.isEnemy)
+        {
+            // Heal the player to full health
+            healthScript.health = healthScript.numOfHearts;
+
+            // Optionally, you can add some visual or sound effects here to indicate the potion was picked up.
+
+            // Destroy the potion object after being picked up
+            Destroy(gameObject);
+        }
     }
 }
