@@ -63,8 +63,11 @@ public class Health : MonoBehaviour
             Debug.Log(gameObject.name + " health reached zero.");
             if (isEnemy)
             {
+                FirstLevelManager levelManager = FindObjectOfType<FirstLevelManager>();
+
                 Debug.Log(gameObject.name + " is an enemy and will be destroyed.");
                 Destroy(gameObject); // Despawn enemy immediately
+                levelManager.OnEnemyKilled();
             }
         }
     }

@@ -17,7 +17,7 @@ public class EnemyAI : MonoBehaviour
 
     // New parameters
     public float patrolSpeed = 3.5f;
-    public float chaseSpeed = 5.0f;
+    public float chaseSpeed = 4.5f;
 
     void Start()
     {
