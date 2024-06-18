@@ -7,8 +7,7 @@ public class MainMenu : MonoBehaviour
     {
         // Load the game scene
         SceneManager.LoadScene("FirstLevel"); 
-
-        //GameManager.instance.ChangeState(GameManager.GameState.Playing);
+        GameManager.instance.ChangeState(GameManager.GameState.Playing);
     }
 
     public void CreditScene(){
