@@ -1880,6 +1880,7 @@ MonoBehaviour:
   health: 2
   numOfHearts: 2
   isEnemy: 1
+  knockbackForce: 5
   hearts: []
   fullHeart: {fileID: 0}
   emptyHeart: {fileID: 0}
@@ -3640,6 +3641,7 @@ MonoBehaviour:
   health: 2
   numOfHearts: 2
   isEnemy: 1
+  knockbackForce: 5
   hearts: []
   fullHeart: {fileID: 0}
   emptyHeart: {fileID: 0}
@@ -5767,6 +5769,7 @@ MonoBehaviour:
   health: 2
   numOfHearts: 2
   isEnemy: 1
+  knockbackForce: 5
   hearts: []
   fullHeart: {fileID: 0}
   emptyHeart: {fileID: 0}
@@ -6262,37 +6265,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a397f10d7b785064e9d0f7b5ab603003, type: 3}
---- !u!1 &1297564925
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1297564926}
-  m_Layer: 0
-  m_Name: LevelLogic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1297564926
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297564925}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.70076, y: 9.072834, z: 0.13881588}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1299391850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8861,6 +8833,7 @@ MonoBehaviour:
   health: 2
   numOfHearts: 2
   isEnemy: 1
+  knockbackForce: 5
   hearts: []
   fullHeart: {fileID: 0}
   emptyHeart: {fileID: 0}
@@ -9960,4 +9933,3 @@ SceneRoots:
   - {fileID: 836021256}
   - {fileID: 2107584849}
   - {fileID: 81822865}
-  - {fileID: 1297564926}
