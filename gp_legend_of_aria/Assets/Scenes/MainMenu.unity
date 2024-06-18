@@ -711,7 +711,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f0a8e838c3540dc4cb04c7d27877232b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7105f918f8a54564e9f9c05fecbd38a9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1101,7 +1101,7 @@ GameObject:
   - component: {fileID: 2058108366}
   - component: {fileID: 2058108365}
   m_Layer: 0
-  m_Name: Empty
+  m_Name: ScriptObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

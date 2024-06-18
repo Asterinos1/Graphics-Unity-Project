@@ -56,13 +56,13 @@ public class GameManager : MonoBehaviour
     public void LoadLevel(int levelIndex)
     {
         if(levelIndex==1){
-            SceneManager.LoadLevel("FirstScene");
+            SceneManager.LoadScene("FirstScene");
         }else if(levelIndex==2){
-            SceneManager.LoadLevel("SecondScene");
+            SceneManager.LoadScene("SecondScene");
         }else if(levelIndex==3){
-            SceneManager.LoadLevel("ThirdScene");
+            SceneManager.LoadScene("ThirdScene");
         }else{
-            SceneManager.LoadLevel("MainMenu");
+            SceneManager.LoadScene("MainMenu");
         }
 
         //string levelName = "Scene" + levelIndex;

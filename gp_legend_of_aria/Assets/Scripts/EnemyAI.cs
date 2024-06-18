@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UI;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -16,7 +15,7 @@ public class EnemyAI : MonoBehaviour
     private float lastAttackTime;
     private Vector3 initialPosition;
 
-    //new parameters
+    // New parameters
     public float patrolSpeed = 3.5f;
     public float chaseSpeed = 5.0f;
 
@@ -24,7 +23,7 @@ public class EnemyAI : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         initialPosition = transform.position;
-        lastAttackTime = -attackDelay;  // Ensures the enemy can attack immediately the first time
+        lastAttackTime = -attackDelay; // Ensures the enemy can attack immediately the first time
     }
 
     void Update()
@@ -47,7 +46,7 @@ public class EnemyAI : MonoBehaviour
 
     void Patrol()
     {
-         agent.speed = patrolSpeed; // Set speed for patrolling
+        agent.speed = patrolSpeed; // Set speed for patrolling
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
         {
             Vector3 newPatrolPoint = initialPosition + Random.insideUnitSphere * patrolRadius;
@@ -74,9 +73,11 @@ public class EnemyAI : MonoBehaviour
             lastAttackTime = Time.time;
 
             // Example to reduce player health, assuming player has a Health component
-            if (player.GetComponent<Health>())
+            Health playerHealth = player.GetComponent<Health>();
+            if (playerHealth != null)
             {
-                player.GetComponent<Health>().health -= 1;
+                Vector3 knockbackDirection = (player.transform.position - transform.position).normalized;
+                playerHealth.TakeDamage(1, knockbackDirection);
             }
         }
 
