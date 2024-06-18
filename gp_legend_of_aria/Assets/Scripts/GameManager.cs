@@ -38,19 +38,25 @@ public class GameManager : MonoBehaviour
 
     private void LoadLevel(int level)
     {
-        if(level==1){
+        if (level == 1)
+        {
             Debug.Log("Now entering Level 1");
             SceneManager.LoadScene("FirstLevel");
-        }else if(level==2){
+        }
+        else if (level == 2)
+        {
             Debug.Log("Now entering Level 2");
             SceneManager.LoadScene("SecondLevel");
-        }else if(level==2){
+        }
+        else if (level == 3)
+        {
             Debug.Log("Now entering Level 3");
-            SceneManager.LoadScene("SecondLevel");
+            SceneManager.LoadScene("ThirdLevel");
         }
 
-        //string levelName = "Level" + level.ToString();
-        //SceneManager.LoadScene(levelName);
+        // Alternatively, if your level scenes are named consistently:
+        // string levelName = "Level" + level.ToString();
+        // SceneManager.LoadScene(levelName);
     }
 
     private void LoadMainMenu()
