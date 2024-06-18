@@ -6,17 +6,14 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         // Load the game scene
-        SceneManager.LoadScene("FirstLevel"); // Replace "GameScene" with the name of your game scene
+        SceneManager.LoadScene("FirstLevel"); 
+        
+        GameManager.instace.ChangeState(GameManager.GameState.Playing);
     }
 
     public void QuitGame()
     {
         // Quit the application
         Application.Quit();
-        
-        // For testing in the Unity editor
-        #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-        #endif
     }
 }
