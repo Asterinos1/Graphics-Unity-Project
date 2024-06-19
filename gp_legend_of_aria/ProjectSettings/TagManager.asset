@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - SpecialBox
+  - LionStatue
+  - Carpet
   layers:
   - Default
   - TransparentFX

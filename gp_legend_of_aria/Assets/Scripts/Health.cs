@@ -19,7 +19,7 @@ public class Health : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Debug.Log(gameObject.name + " isEnemy: " + isEnemy);
+        //Debug.Log(gameObject.name + " isEnemy: " + isEnemy);
     }
 
     void Update()
@@ -50,7 +50,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage, Vector3 knockbackDirection)
     {
         health -= damage;
-        Debug.Log(gameObject.name + " took " + damage + " damage. Remaining health: " + health); // Log when an enemy takes damage
+        //Debug.Log(gameObject.name + " took " + damage + " damage. Remaining health: " + health); // Log when an enemy takes damage
 
         if (rb != null)
         {
@@ -60,12 +60,12 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             health = 0; // Ensure health doesn't go below zero
-            Debug.Log(gameObject.name + " health reached zero.");
+            //Debug.Log(gameObject.name + " health reached zero.");
             if (isEnemy)
             {
                 FirstLevelManager levelManager = FindObjectOfType<FirstLevelManager>();
 
-                Debug.Log(gameObject.name + " is an enemy and will be destroyed.");
+                //Debug.Log(gameObject.name + " is an enemy and will be destroyed.");
                 Destroy(gameObject); // Despawn enemy immediately
                 levelManager.OnEnemyKilled();
             }
