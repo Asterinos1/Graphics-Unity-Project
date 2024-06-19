@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FirstLevelManager : MonoBehaviour
 {
@@ -50,7 +51,7 @@ public class FirstLevelManager : MonoBehaviour
     {
         //Debug.Log("Checking door conditions...");
         // Check conditions for door 1
-        if (enemyCount <= initialEnemyCount / 2 && lionStatuesOnCarpetCount == requiredLionStatuesOnCarpet && DoorCollider1 != null)
+        if (enemyCount <= initialEnemyCount / 2 && lionStatuesOnCarpetCount >= requiredLionStatuesOnCarpet && DoorCollider1 != null)
         {
             Debug.Log("Conditions met for opening door 1.");
             Destroy(DoorCollider1); // Remove the first door collider
@@ -58,7 +59,7 @@ public class FirstLevelManager : MonoBehaviour
         }
 
         // Check conditions for door 2
-        if (enemyCount == 0 && lionStatuesOnCarpetCount == (requiredLionStatuesOnCarpet+4) && DoorCollider2 != null)
+        if (enemyCount == 0 && lionStatuesOnCarpetCount >= requiredLionStatuesOnCarpet + 4 && DoorCollider2 != null)
         {
             Debug.Log("Conditions met for opening door 2.");
             Destroy(DoorCollider2); // Remove the second door collider
