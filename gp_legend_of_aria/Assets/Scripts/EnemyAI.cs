@@ -18,6 +18,7 @@ public class EnemyAI : MonoBehaviour
     // New parameters
     public float patrolSpeed = 3.5f;
     public float chaseSpeed = 4.5f;
+    private bool isWaitingToAttack = false;
 
     void Start()
     {
@@ -32,7 +33,10 @@ public class EnemyAI : MonoBehaviour
 
         if (distanceToPlayer <= attackRange)
         {
-            AttackPlayer();
+            if (!isWaitingToAttack)
+            {
+                StartCoroutine(WaitAndAttack());
+            }
         }
         else if (distanceToPlayer <= chaseRange)
         {
@@ -64,6 +68,24 @@ public class EnemyAI : MonoBehaviour
         agent.SetDestination(player.position);
     }
 
+    IEnumerator WaitAndAttack()
+    {
+        isWaitingToAttack = true;
+
+        // Ensure the enemy stops moving to "perform" the attack
+        agent.SetDestination(transform.position);
+        
+        // Wait for 1 second before attacking
+        yield return new WaitForSeconds(0.65f);
+
+        if (Vector3.Distance(player.position, transform.position) <= attackRange)
+        {
+            AttackPlayer();
+        }
+
+        isWaitingToAttack = false;
+    }
+
     void AttackPlayer()
     {
         if (Time.time - lastAttackTime >= attackDelay)
@@ -79,8 +101,5 @@ public class EnemyAI : MonoBehaviour
                 playerHealth.TakeDamage(1);
             }
         }
-
-        // Ensure the enemy stops moving to "perform" the attack
-        agent.SetDestination(transform.position);
     }
 }
