@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class AudioManager : MonoBehaviour
 {
     private static AudioManager instance;
+    private AudioSource audioSource;
 
     void Awake()
     {
@@ -11,6 +12,7 @@ public class AudioManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            audioSource = GetComponentInChildren<AudioSource>();
         }
         else
         {
@@ -27,5 +29,18 @@ public class AudioManager : MonoBehaviour
             // If the current scene is neither the MainMenu nor CreditsScene, destroy the audio manager
             Destroy(gameObject);
         }
+    }
+
+    public void ToggleSound()
+    {
+        if (audioSource != null)
+        {
+            audioSource.mute = !audioSource.mute;
+        }
+    }
+
+    public bool IsSoundEnabled()
+    {
+        return audioSource != null && !audioSource.mute;
     }
 }
