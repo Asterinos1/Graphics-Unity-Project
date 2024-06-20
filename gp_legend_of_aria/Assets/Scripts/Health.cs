@@ -7,9 +7,7 @@ public class Health : MonoBehaviour
 {
     public int health;
     public int numOfHearts;
-    public bool isEnemy;  // Flag to check if the entity is an enemy
-    public float knockbackForce = 5.0f; // Force of the knockback
-
+    public bool isEnemy;  // Flag to check if the entity is an enemy8896
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
@@ -47,27 +45,37 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage, Vector3 knockbackDirection)
+    public void TakeDamage(int damage)
     {
         health -= damage;
-        //Debug.Log(gameObject.name + " took " + damage + " damage. Remaining health: " + health); // Log when an enemy takes damage
-
-        if (rb != null)
-        {
-            rb.AddForce(knockbackDirection * knockbackForce, ForceMode.Impulse);
-        }
-
         if (health <= 0)
         {
             health = 0; // Ensure health doesn't go below zero
-            //Debug.Log(gameObject.name + " health reached zero.");
+
+            // Check if the gameObject is an enemy
             if (isEnemy)
             {
-                FirstLevelManager levelManager = FindObjectOfType<FirstLevelManager>();
+                // Attempt to find each level manager
+                FirstLevelManager firstLevelManager = FindObjectOfType<FirstLevelManager>();
+                SecondLevelManager secondLevelManager = FindObjectOfType<SecondLevelManager>();
+                ThirdLevelManager thirdLevelManager = FindObjectOfType<ThirdLevelManager>();
 
-                //Debug.Log(gameObject.name + " is an enemy and will be destroyed.");
+                // Check which level manager is not null and call the OnEnemyKilled method
+                if (firstLevelManager != null)
+                {
+                    firstLevelManager.OnEnemyKilled();
+                }
+                else if (secondLevelManager != null)
+                {
+                    secondLevelManager.OnEnemyKilled();
+                }
+                else if (thirdLevelManager != null)
+                {
+                    thirdLevelManager.OnEnemyKilled();
+                }
+
+                // Destroy the enemy
                 Destroy(gameObject); // Despawn enemy immediately
-                levelManager.OnEnemyKilled();
             }
         }
     }

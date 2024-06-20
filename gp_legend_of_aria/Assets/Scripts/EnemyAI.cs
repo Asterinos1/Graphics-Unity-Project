@@ -76,8 +76,7 @@ public class EnemyAI : MonoBehaviour
             Health playerHealth = player.GetComponent<Health>();
             if (playerHealth != null)
             {
-                Vector3 knockbackDirection = (player.transform.position - transform.position).normalized;
-                playerHealth.TakeDamage(1, knockbackDirection);
+                playerHealth.TakeDamage(1);
             }
         }
 

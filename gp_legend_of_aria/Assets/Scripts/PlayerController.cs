@@ -64,8 +64,7 @@ public class PlayerController : MonoBehaviour
                 Health enemyHealth = hitCollider.GetComponent<Health>();
                 if (enemyHealth != null)
                 {
-                    Vector3 knockbackDirection = (hitCollider.transform.position - transform.position).normalized;
-                    enemyHealth.TakeDamage(attackDamage, knockbackDirection);
+                    enemyHealth.TakeDamage(attackDamage);
                 }
             }
         }
