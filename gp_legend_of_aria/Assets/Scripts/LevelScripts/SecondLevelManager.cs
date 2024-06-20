@@ -28,7 +28,6 @@ public class SecondLevelManager : MonoBehaviour
 
     private void CheckDoorConditions()
     {
-        //Debug.Log("Checking door conditions...");
         // Check conditions for door 1
         if (enemyCount == 4 && DoorCollider1 != null)
         {

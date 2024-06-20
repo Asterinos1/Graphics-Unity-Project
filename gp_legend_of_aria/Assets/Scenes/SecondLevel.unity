@@ -4194,7 +4194,7 @@ Transform:
   m_GameObject: {fileID: 286496710}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 171.6, y: 24.9, z: -27.82}
+  m_LocalPosition: {x: 171.6, y: 24.81, z: -27.82}
   m_LocalScale: {x: 4, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6579,7 +6579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8126671758143109067, guid: 62b7558c1a32c534298df0fb51075d01, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.99
+      value: 1.39
       objectReference: {fileID: 0}
     - target: {fileID: 8126671758143109067, guid: 62b7558c1a32c534298df0fb51075d01, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8226,6 +8226,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2048247741}
     m_Modifications:
+    - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
+      propertyPath: secondLevelManager
+      value: 
+      objectReference: {fileID: 2028781981}
     - target: {fileID: 3697508309467762992, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.519989
@@ -10576,8 +10580,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903933698}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 59.4, y: -9.6905775, z: -9.8}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 2.2458916, y: -2.9372625, z: -24.232613}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10647,7 +10651,7 @@ Transform:
   - {fileID: 1874684810}
   - {fileID: 994210002}
   - {fileID: 351975773}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2028781980}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &906326075
 PrefabInstance:
@@ -13508,6 +13512,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2048247741}
     m_Modifications:
+    - target: {fileID: 3758628588118982996, guid: d0646cfc993bf3948aeb9ec54ba04166, type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
     - target: {fileID: 4308694325727585456, guid: d0646cfc993bf3948aeb9ec54ba04166, type: 3}
       propertyPath: m_Name
       value: Lion_Statue (5) Variant (1)
@@ -13526,7 +13534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4308694325727627730, guid: d0646cfc993bf3948aeb9ec54ba04166, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7173674
+      value: 0.638
       objectReference: {fileID: 0}
     - target: {fileID: 4308694325727627730, guid: d0646cfc993bf3948aeb9ec54ba04166, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14661,15 +14669,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 180523333334605273, guid: beae5ded7133d714b880f53c45bc6aa8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 168.38
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: 180523333334605273, guid: beae5ded7133d714b880f53c45bc6aa8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.87
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 180523333334605273, guid: beae5ded7133d714b880f53c45bc6aa8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.68
+      value: -7.188
       objectReference: {fileID: 0}
     - target: {fileID: 180523333334605273, guid: beae5ded7133d714b880f53c45bc6aa8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21627,6 +21635,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2048247741}
     m_Modifications:
+    - target: {fileID: 3758628588118982996, guid: d0646cfc993bf3948aeb9ec54ba04166, type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
     - target: {fileID: 4308694325727585456, guid: d0646cfc993bf3948aeb9ec54ba04166, type: 3}
       propertyPath: m_Name
       value: Lion_Statue (5) Variant
@@ -21645,7 +21657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4308694325727627730, guid: d0646cfc993bf3948aeb9ec54ba04166, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7173674
+      value: 0.641
       objectReference: {fileID: 0}
     - target: {fileID: 4308694325727627730, guid: d0646cfc993bf3948aeb9ec54ba04166, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24001,7 +24013,8 @@ Transform:
   m_LocalPosition: {x: 57.15411, y: -6.753315, z: 14.432613}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 903933699}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2028781981
@@ -24017,7 +24030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoorCollider1: {fileID: 1747957673}
-  DoorCollider2: {fileID: 0}
+  DoorCollider2: {fileID: 1511174736}
   requiredLionStatuesOnCarpet: 2
 --- !u!1001 &2037299687
 PrefabInstance:
@@ -26106,6 +26119,5 @@ SceneRoots:
   - {fileID: 559062878}
   - {fileID: 2028781980}
   - {fileID: 1295508524}
-  - {fileID: 903933699}
   - {fileID: 332183048}
   - {fileID: 2048247741}
