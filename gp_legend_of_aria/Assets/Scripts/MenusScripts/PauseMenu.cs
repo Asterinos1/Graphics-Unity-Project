@@ -39,5 +39,6 @@ public class PauseMenuManager : MonoBehaviour
     {
         Time.timeScale = 1f; // Ensure time scale is reset when returning to the menu
         SceneManager.LoadScene("MainMenu"); // Replace with the name of your menu scene
+        GameManager.instance.currentLevel=0;
     }
 }

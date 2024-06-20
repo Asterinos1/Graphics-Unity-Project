@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void setCurrentLevel(int num){
+        currentLevel=num;
+    }
+
     public void LoadNextLevel()
     {
         if (currentLevel < maxLevel)
@@ -52,7 +56,12 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Now entering Level 3");
             SceneManager.LoadScene("ThirdLevel");
-        }
+        }else if(level == 4){
+
+            Debug.Log("Finished! Back to main menu");
+            setCurrentLevel(1);
+            LoadMainMenu();
+        }   
 
         // Alternatively, if your level scenes are named consistently:
         // string levelName = "Level" + level.ToString();
