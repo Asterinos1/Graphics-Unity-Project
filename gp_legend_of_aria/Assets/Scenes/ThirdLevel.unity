@@ -3814,6 +3814,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5695148478590796897, guid: beae5ded7133d714b880f53c45bc6aa8, type: 3}
+      propertyPath: fullHeart
+      value: 
+      objectReference: {fileID: 21300000, guid: b86c3d3bd68ffd64ba4503798969c990, type: 3}
+    - target: {fileID: 5695148478590796897, guid: beae5ded7133d714b880f53c45bc6aa8, type: 3}
+      propertyPath: emptyHeart
+      value: 
+      objectReference: {fileID: 21300000, guid: 7afd2c78fbfd7d742bd043bb59ac1e75, type: 3}
+    - target: {fileID: 5695148478590796897, guid: beae5ded7133d714b880f53c45bc6aa8, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 1442593641}
@@ -12052,6 +12060,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 694229683411252718, guid: 5b9bb953782457c4ba3127a06e5862d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b86c3d3bd68ffd64ba4503798969c990, type: 3}
     - target: {fileID: 1317643472250491096, guid: 5b9bb953782457c4ba3127a06e5862d8, type: 3}
       propertyPath: m_Name
       value: UI
@@ -12096,6 +12108,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2051324011982375343, guid: 5b9bb953782457c4ba3127a06e5862d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b86c3d3bd68ffd64ba4503798969c990, type: 3}
+    - target: {fileID: 2570767831620740035, guid: 5b9bb953782457c4ba3127a06e5862d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b86c3d3bd68ffd64ba4503798969c990, type: 3}
     - target: {fileID: 2743544721843303115, guid: 5b9bb953782457c4ba3127a06e5862d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -12108,6 +12128,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuitToMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 6442683209078265091, guid: 5b9bb953782457c4ba3127a06e5862d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b86c3d3bd68ffd64ba4503798969c990, type: 3}
+    - target: {fileID: 6862333709045937067, guid: 5b9bb953782457c4ba3127a06e5862d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b86c3d3bd68ffd64ba4503798969c990, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
