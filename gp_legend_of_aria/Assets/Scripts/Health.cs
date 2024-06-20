@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -76,6 +77,24 @@ public class Health : MonoBehaviour
 
                 // Destroy the enemy
                 Destroy(gameObject); // Despawn enemy immediately
+            }else{
+
+                FirstLevelManager firstLevelManager = FindObjectOfType<FirstLevelManager>();
+                SecondLevelManager secondLevelManager = FindObjectOfType<SecondLevelManager>();
+                ThirdLevelManager thirdLevelManager = FindObjectOfType<ThirdLevelManager>();
+
+                if (firstLevelManager != null)
+                {
+                    SceneManager.LoadScene("FirstLevel");
+                }
+                else if (secondLevelManager != null)
+                {
+                    SceneManager.LoadScene("SecondLevel");
+                }
+                else if (thirdLevelManager != null)
+                {
+                    SceneManager.LoadScene("ThirdLevel");
+                }
             }
         }
     }

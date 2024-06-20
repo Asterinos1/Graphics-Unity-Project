@@ -581,7 +581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -132, y: 165}
+  m_AnchoredPosition: {x: -132, y: 148}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &710005328
@@ -604,9 +604,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Creator: Asterinos Karalis
-
-'
+  m_text: "Creator: Asterinos Karalis ECE TUC\n\nAll assets used in this project
+    are free both in terms of price and copyrights.\n\n1)  Music: All tracks are
+    from Uppbeat.io, a royality free music site  (https://uppbeat.io/).\n\n2) 3D
+    Models: \n - Unity Asset Store \t(https://assetstore.unity.com/).\n - Sketchfab\t\t(https://sketchfab.com/).\n\n3)
+    Terrain: Textures from Unity Asset Store,\n\n You can find every link regarding
+    each asset in the Project's report PDF.\n\nThanks for playing :) !\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -615,8 +618,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4285923333
+  m_fontColor: {r: 0.01874051, g: 0, b: 0.46226418, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -633,8 +636,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -669,7 +672,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -5.8035736, y: 0, z: -268.6115, w: -284.1048}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -929,8 +932,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4288613120
+  m_fontColor: {r: 0, g: 0.04261445, b: 0.6226415, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
