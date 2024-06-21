@@ -37,8 +37,9 @@ public class PauseMenuManager : MonoBehaviour
 
     public void QuitToMenu()
     {
+        Debug.Log("Going to the Main Menu now..");
         Time.timeScale = 1f; // Ensure time scale is reset when returning to the menu
         SceneManager.LoadScene("MainMenu"); // Replace with the name of your menu scene
-        GameManager.instance.currentLevel=0;
+        //GameManager.instance.currentLevel=0;
     }
 }
