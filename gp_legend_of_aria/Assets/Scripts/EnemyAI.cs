@@ -10,8 +10,9 @@ public class EnemyAI : MonoBehaviour
     public float attackRange = 2f;
     public float patrolRadius = 5f;
     public float attackDelay = 1.5f;
-
+    
     private NavMeshAgent agent;
+    private Animator animator; // Reference to the Animator component
     private float lastAttackTime;
     private Vector3 initialPosition;
 
@@ -23,6 +24,7 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>(); // Get the Animator component
         initialPosition = transform.position;
         lastAttackTime = -attackDelay; // Ensures the enemy can attack immediately the first time
     }
@@ -51,6 +53,10 @@ public class EnemyAI : MonoBehaviour
     void Patrol()
     {
         agent.speed = patrolSpeed; // Set speed for patrolling
+        animator.SetBool("isWalking", true); // Set walking animation
+        animator.SetBool("isRunning", false);
+        animator.SetBool("isAttacking", false);
+
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
         {
             Vector3 newPatrolPoint = initialPosition + Random.insideUnitSphere * patrolRadius;
@@ -65,6 +71,9 @@ public class EnemyAI : MonoBehaviour
     void ChasePlayer()
     {
         agent.speed = chaseSpeed; // Set speed for chasing  
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isRunning", true); // Set running animation
+        animator.SetBool("isAttacking", false);
         agent.SetDestination(player.position);
     }
 
@@ -74,6 +83,9 @@ public class EnemyAI : MonoBehaviour
 
         // Ensure the enemy stops moving to "perform" the attack
         agent.SetDestination(transform.position);
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isRunning", false);
+        animator.SetBool("isAttacking", true); // Set attacking animation
         
         // Wait for 1 second before attacking
         yield return new WaitForSeconds(0.60f);
