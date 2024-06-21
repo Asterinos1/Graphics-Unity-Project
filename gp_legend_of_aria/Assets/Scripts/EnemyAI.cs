@@ -76,7 +76,7 @@ public class EnemyAI : MonoBehaviour
         agent.SetDestination(transform.position);
         
         // Wait for 1 second before attacking
-        yield return new WaitForSeconds(0.65f);
+        yield return new WaitForSeconds(0.60f);
 
         if (Vector3.Distance(player.position, transform.position) <= attackRange)
         {
