@@ -42,19 +42,29 @@ public class GameManager : MonoBehaviour
 
     private void LoadLevel(int level)
     {
+        // Hide the cursor
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+
         if (level == 1)
         {
             Debug.Log("Now entering Level 1");
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             SceneManager.LoadScene("FirstLevel");
         }
         else if (level == 2)
-        {
+        {   
             Debug.Log("Now entering Level 2");
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             SceneManager.LoadScene("SecondLevel");
         }
         else if (level == 3)
         {
             Debug.Log("Now entering Level 3");
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             SceneManager.LoadScene("ThirdLevel");
         }else if(level == 4){
 
@@ -66,6 +76,8 @@ public class GameManager : MonoBehaviour
 
     private void LoadMainMenu()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("MainMenu");
     }
 
