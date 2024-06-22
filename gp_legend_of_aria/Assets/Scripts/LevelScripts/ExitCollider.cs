@@ -13,17 +13,17 @@ public class ExitCollider : MonoBehaviour
             if (firstLevelManager != null)
             {
                 SceneManager.LoadScene("SecondLevel");
-                GameManager.instance.LoadLevel(2);
+               //GameManager.instance.LoadLevel(2);
             }
             else if (secondLevelManager != null)
             {
                 SceneManager.LoadScene("ThirdLevel");
-                GameManager.instance.LoadLevel(3);
+                //GameManager.instance.LoadLevel(3);
             }
             else if (thirdLevelManager != null)
             {
                 SceneManager.LoadScene("MainMenu");
-                GameManager.instance.LoadLevel(4);
+                //GameManager.instance.LoadLevel(4);
             }
             //Debug.Log("Exit collider touched. Loading next level.");
             //GameManager.instance.LoadNextLevel("SecondLevel");
