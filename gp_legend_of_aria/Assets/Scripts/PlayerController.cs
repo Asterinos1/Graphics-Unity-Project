@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float sprintMultiplier = 1.5f;
     public int attackDamage = 1;
     public float attackDelay = 0.2f;
-
     private Transform playerTransform;
     private float currentSpeed;
     private bool isAttacking = false;

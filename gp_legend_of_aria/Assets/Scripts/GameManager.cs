@@ -62,10 +62,6 @@ public class GameManager : MonoBehaviour
             setCurrentLevel(1);
             LoadMainMenu();
         }   
-
-        // Alternatively, if your level scenes are named consistently:
-        // string levelName = "Level" + level.ToString();
-        // SceneManager.LoadScene(levelName);
     }
 
     private void LoadMainMenu()
