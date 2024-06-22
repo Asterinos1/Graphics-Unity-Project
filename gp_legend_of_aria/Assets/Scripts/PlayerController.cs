@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,6 +27,27 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && !isAttacking)
         {
             StartCoroutine(Attack());
+        }
+
+
+         if (Input.GetKeyDown(KeyCode.R))
+        {
+            FirstLevelManager firstLevelManager = FindObjectOfType<FirstLevelManager>();
+            SecondLevelManager secondLevelManager = FindObjectOfType<SecondLevelManager>();
+            ThirdLevelManager thirdLevelManager = FindObjectOfType<ThirdLevelManager>();
+
+            if (firstLevelManager != null)
+            {
+                SceneManager.LoadScene("FirstLevel");
+            }
+            else if (secondLevelManager != null)
+            {
+                SceneManager.LoadScene("SecondLevel");
+            }
+            else if (thirdLevelManager != null)
+            {
+                SceneManager.LoadScene("ThirdLevel");
+            }
         }
     }
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FloatingPotion : MonoBehaviour
 {
+    public AudioSource potionSound;
+
     [Tooltip("The height of the up and down movement")]
     public float amplitude = 0.5f; // The height of the up and down movement
 
@@ -40,7 +42,7 @@ public class FloatingPotion : MonoBehaviour
             healthScript.health = healthScript.numOfHearts;
 
             // Optionally, you can add some visual or sound effects here to indicate the potion was picked up.
-
+            potionSound.Play();
             // Destroy the potion object after being picked up
             Destroy(gameObject);
         }
