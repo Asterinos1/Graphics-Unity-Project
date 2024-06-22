@@ -1,8 +1,18 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
+    public Button fullscreenToggleButton; // Reference to the Button component
+
+    private void Start()
+    {
+        // Set the initial text based on the current fullscreen state
+        UpdateFullscreenButtonText();
+    }
+
     public void PlayGame()
     {
         Cursor.visible = false;
@@ -41,6 +51,33 @@ public class MainMenu : MonoBehaviour
 
     public void ToggleFullscreen()
     {
+        // Toggle the fullscreen mode
         Screen.fullScreen = !Screen.fullScreen;
+
+        // Update the button text
+        UpdateFullscreenButtonText();
+    }
+
+    private void UpdateFullscreenButtonText()
+    {
+        if (fullscreenToggleButton != null)
+        {
+            TextMeshProUGUI buttonTextTMP = fullscreenToggleButton.GetComponentInChildren<TextMeshProUGUI>();
+            if (buttonTextTMP != null)
+            {
+                // Log the current and new button text
+                Debug.Log("Updating button text (TMP). Current text: " + buttonTextTMP.text);
+                buttonTextTMP.text = Screen.fullScreen ? "Fullscreen" : "Window";
+                Debug.Log("New button text (TMP): " + buttonTextTMP.text);
+            }
+            else
+            {
+                Debug.LogError("No TextMeshProUGUI component found on the fullscreen toggle button.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Fullscreen toggle button is not assigned.");
+        }
     }
 }

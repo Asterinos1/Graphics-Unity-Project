@@ -380,16 +380,16 @@ RectTransform:
   m_GameObject: {fileID: 1427620156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1091232645}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000045776367, y: -0.0000038146973}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.3, y: 0.3}
 --- !u!114 &1427620158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'FS/WN
+  m_text: '
 
 '
   m_isRightToLeft: 0
@@ -1059,6 +1059,10 @@ PrefabInstance:
       propertyPath: musicSourcePrefab
       value: 
       objectReference: {fileID: 776353919}
+    - target: {fileID: 8365500817111487309, guid: 8015ce214d1444a4d9887925d66ecb2b, type: 3}
+      propertyPath: fullscreenToggleButton
+      value: 
+      objectReference: {fileID: 1091232646}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
