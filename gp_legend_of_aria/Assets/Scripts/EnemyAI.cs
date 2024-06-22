@@ -93,6 +93,7 @@ public class EnemyAI : MonoBehaviour
         if (Vector3.Distance(player.position, transform.position) <= attackRange)
         {
             AttackPlayer();
+            animator.SetBool("isAttacking", false); // Set attacking animation
         }
 
         isWaitingToAttack = false;
