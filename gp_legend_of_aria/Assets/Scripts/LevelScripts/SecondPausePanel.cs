@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class SecondPausePanel : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public AudioSource musicSource; // Reference to the audio source
     private bool isPaused = false;
+    private bool isMusicOn = true; // Track music state
 
     void Update()
     {
@@ -49,5 +51,11 @@ public class SecondPausePanel : MonoBehaviour
         Cursor.lockState = CursorLockMode.None; // Unlock the cursor in the main menu
         SceneManager.LoadScene("MainMenu"); // Replace with the name of your menu scene
         //GameManager.instance.currentLevel=0;
+    }
+
+    public void ToggleMusic()
+    {
+        isMusicOn = !isMusicOn;
+        musicSource.mute = !isMusicOn;
     }
 }
