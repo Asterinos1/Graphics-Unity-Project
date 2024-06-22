@@ -6,11 +6,27 @@ using TMPro;
 public class MainMenu : MonoBehaviour
 {
     public Button fullscreenToggleButton; // Reference to the Button component
+    public Button selectLevelButton; // Reference to the Select Level button
+    public GameObject selectLevelPanel; // Reference to the Select Level panel
+    public Button level1Button; // Reference to Level 1 button
+    public Button level2Button; // Reference to Level 2 button
+    public Button level3Button; // Reference to Level 3 button
+    public Button backButton; // Reference to the Back button
 
     private void Start()
     {
         // Set the initial text based on the current fullscreen state
         UpdateFullscreenButtonText();
+        
+        // Hide the select level panel initially
+        selectLevelPanel.SetActive(false);
+
+        // Assign button click listeners
+        selectLevelButton.onClick.AddListener(ToggleSelectLevelPanel);
+        level1Button.onClick.AddListener(() => LoadLevel("FirstLevel"));
+        level2Button.onClick.AddListener(() => LoadLevel("SecondLevel"));
+        level3Button.onClick.AddListener(() => LoadLevel("ThirdLevel"));
+        backButton.onClick.AddListener(ToggleSelectLevelPanel);
     }
 
     public void PlayGame()
@@ -79,5 +95,17 @@ public class MainMenu : MonoBehaviour
         {
             Debug.LogError("Fullscreen toggle button is not assigned.");
         }
+    }
+
+    private void ToggleSelectLevelPanel()
+    {
+        selectLevelPanel.SetActive(!selectLevelPanel.activeSelf);
+    }
+
+    private void LoadLevel(string levelName)
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        SceneManager.LoadScene(levelName);
     }
 }
