@@ -22,6 +22,8 @@ public class ExitCollider : MonoBehaviour
             }
             else if (thirdLevelManager != null)
             {
+                Cursor.visible = true; // Show the cursor in the main menu
+                Cursor.lockState = CursorLockMode.None; // Unlock the cursor in the main menu
                 SceneManager.LoadScene("MainMenu");
                 //GameManager.instance.LoadLevel(4);
             }
