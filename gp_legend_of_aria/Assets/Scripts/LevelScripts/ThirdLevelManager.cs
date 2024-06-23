@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ThirdLevelManager : MonoBehaviour
 {
+    public AudioSource doorOpened;
     private int enemyCount;
     private int initialEnemyCount;
     public Collider DoorCollider1;
@@ -53,6 +54,7 @@ public class ThirdLevelManager : MonoBehaviour
         if (enemyCount <= initialEnemyCount / 2 && lionStatuesOnCarpetCount >= requiredLionStatuesOnCarpet && DoorCollider1 != null)
         {
             Debug.Log("Conditions met for opening door 1.");
+            doorOpened.Play();
             Destroy(DoorCollider1); // Remove the first door collider
             DoorCollider1 = null; // Set to null to prevent multiple attempts to destroy
         }
@@ -61,6 +63,7 @@ public class ThirdLevelManager : MonoBehaviour
         if (enemyCount == 0 && lionStatuesOnCarpetCount >= requiredLionStatuesOnCarpet*2 && DoorCollider2 != null)
         {
             Debug.Log("Conditions met for opening door 2.");
+            doorOpened.Play();
             Destroy(DoorCollider2); // Remove the second door collider
             DoorCollider2 = null; // Set to null to prevent multiple attempts to destroy
         }

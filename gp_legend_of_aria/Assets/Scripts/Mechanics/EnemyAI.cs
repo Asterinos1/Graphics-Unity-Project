@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    public AudioSource attackSound;
     public Transform player;
     public float chaseRange = 10f;
     public float attackRange = 2f;
@@ -92,6 +93,8 @@ public class EnemyAI : MonoBehaviour
 
         if (Vector3.Distance(player.position, transform.position) <= attackRange)
         {
+            //attack sound
+            attackSound.Play();
             AttackPlayer();
             animator.SetBool("isAttacking", false); // Set attacking animation
         }

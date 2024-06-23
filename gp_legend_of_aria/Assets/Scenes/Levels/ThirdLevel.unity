@@ -299,6 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -893,6 +894,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 105772328}
     m_Modifications:
     - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
+      propertyPath: carpetSound
+      value: 
+      objectReference: {fileID: 906453739}
+    - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
       propertyPath: thirdLevelManager
       value: 
       objectReference: {fileID: 1465258440}
@@ -1298,6 +1303,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 441761196}
+    - target: {fileID: 6471264293118505935, guid: 62b7558c1a32c534298df0fb51075d01, type: 3}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 906453742}
     - target: {fileID: 8126671758143109067, guid: 62b7558c1a32c534298df0fb51075d01, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.699997
@@ -1668,6 +1677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -1779,6 +1789,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 438906099}
     m_Modifications:
+    - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
+      propertyPath: carpetSound
+      value: 
+      objectReference: {fileID: 906453739}
     - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
       propertyPath: thirdLevelManager
       value: 
@@ -3322,6 +3336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -3950,6 +3965,10 @@ PrefabInstance:
       propertyPath: hearts.Array.data[4]
       value: 
       objectReference: {fileID: 1442593637}
+    - target: {fileID: 5887201320437660664, guid: beae5ded7133d714b880f53c45bc6aa8, type: 3}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 906453741}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4470,6 +4489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -4811,6 +4831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -5016,6 +5037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -5287,6 +5309,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 441761196}
+    - target: {fileID: 6471264293118505935, guid: 62b7558c1a32c534298df0fb51075d01, type: 3}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 906453742}
     - target: {fileID: 8126671758143109067, guid: 62b7558c1a32c534298df0fb51075d01, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.6
@@ -6265,6 +6291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -7061,6 +7088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -7599,6 +7627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -7764,6 +7793,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4071750753398162, guid: a397f10d7b785064e9d0f7b5ab603003, type: 3}
   m_PrefabInstance: {fileID: 900002721}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &906453738
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 651331246883481861, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.018162
+      objectReference: {fileID: 0}
+    - target: {fileID: 651331246883481861, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -77.716156
+      objectReference: {fileID: 0}
+    - target: {fileID: 651331246883481861, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.3670025
+      objectReference: {fileID: 0}
+    - target: {fileID: 651331246883481861, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 651331246883481861, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651331246883481861, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651331246883481861, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651331246883481861, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651331246883481861, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651331246883481861, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625225239895015794, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+      propertyPath: m_Name
+      value: Sounds (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 595322383303080038, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+--- !u!82 &906453739 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7094380529858543977, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+  m_PrefabInstance: {fileID: 906453738}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &906453740 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2637671477967275136, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+  m_PrefabInstance: {fileID: 906453738}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &906453741 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3633545608842485407, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+  m_PrefabInstance: {fileID: 906453738}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &906453742 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2852104602317532912, guid: 8c290a4bdfee94d468859b4f6c594283, type: 3}
+  m_PrefabInstance: {fileID: 906453738}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &910821887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7834,6 +7941,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 438906099}
     m_Modifications:
+    - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
+      propertyPath: carpetSound
+      value: 
+      objectReference: {fileID: 906453739}
     - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
       propertyPath: thirdLevelManager
       value: 
@@ -8271,6 +8382,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 438906099}
     m_Modifications:
     - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
+      propertyPath: carpetSound
+      value: 
+      objectReference: {fileID: 906453739}
+    - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
       propertyPath: thirdLevelManager
       value: 
       objectReference: {fileID: 1465258440}
@@ -8454,6 +8569,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 441761196}
+    - target: {fileID: 6471264293118505935, guid: 62b7558c1a32c534298df0fb51075d01, type: 3}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 906453742}
     - target: {fileID: 8126671758143109067, guid: 62b7558c1a32c534298df0fb51075d01, type: 3}
       propertyPath: m_LocalPosition.x
       value: -52.08
@@ -11215,6 +11334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -12314,6 +12434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f859c4ccd69dd4a86ed08057af1bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpened: {fileID: 906453740}
   DoorCollider1: {fileID: 1656060038}
   DoorCollider2: {fileID: 653385577}
   requiredLionStatuesOnCarpet: 3
@@ -13482,6 +13603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -14357,6 +14479,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 105772328}
     m_Modifications:
     - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
+      propertyPath: carpetSound
+      value: 
+      objectReference: {fileID: 906453739}
+    - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
       propertyPath: thirdLevelManager
       value: 
       objectReference: {fileID: 1465258440}
@@ -15193,6 +15319,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 105772328}
     m_Modifications:
     - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
+      propertyPath: carpetSound
+      value: 
+      objectReference: {fileID: 906453739}
+    - target: {fileID: 2093077015496877714, guid: e1b5d6f01a723fd488121ca048f6747a, type: 3}
       propertyPath: thirdLevelManager
       value: 
       objectReference: {fileID: 1465258440}
@@ -15261,6 +15391,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 441761196}
+    - target: {fileID: 6471264293118505935, guid: 62b7558c1a32c534298df0fb51075d01, type: 3}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 906453742}
     - target: {fileID: 8126671758143109067, guid: 62b7558c1a32c534298df0fb51075d01, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.600002
@@ -17151,6 +17285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ad7ff58383bb447a0a33221aa9e8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 906453742}
   player: {fileID: 441761196}
   chaseRange: 10
   attackRange: 1
@@ -17472,3 +17607,4 @@ SceneRoots:
   - {fileID: 618094360}
   - {fileID: 578093446}
   - {fileID: 1835858340}
+  - {fileID: 906453738}

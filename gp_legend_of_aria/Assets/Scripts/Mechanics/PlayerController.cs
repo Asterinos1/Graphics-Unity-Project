@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public AudioSource attackSound;
     public float speed = 5.0f;
     public float rotationSpeed = 1200.0f;
     public float sprintMultiplier = 1.5f;
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //walkSound.Stop();
         MovePlayer();
 
         if (Input.GetKeyDown(KeyCode.Space) && !isAttacking)
@@ -75,11 +77,13 @@ public class PlayerController : MonoBehaviour
     IEnumerator Attack()
     {
         isAttacking = true;
+
         yield return new WaitForSeconds(attackDelay);
 
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1.5f); // Adjust the radius as needed
         foreach (var hitCollider in hitColliders)
         {
+            attackSound.Play();
             if (hitCollider.CompareTag("Enemy"))
             {
                 Health enemyHealth = hitCollider.GetComponent<Health>();

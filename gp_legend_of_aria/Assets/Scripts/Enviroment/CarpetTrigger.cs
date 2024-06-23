@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CarpetTrigger : MonoBehaviour
 {
+    public AudioSource carpetSound;
     public FirstLevelManager firstLevelManager;
     public SecondLevelManager secondLevelManager;
     public ThirdLevelManager thirdLevelManager;
@@ -14,14 +15,17 @@ public class CarpetTrigger : MonoBehaviour
         {
             if (firstLevelManager != null)
             {
+                carpetSound.Play();
                 firstLevelManager.OnLionStatuePlaced();
             }
             else if (secondLevelManager != null)
             {
+                carpetSound.Play();
                 secondLevelManager.OnLionStatuePlaced();
             }
             else if (thirdLevelManager != null)
             {
+                carpetSound.Play();
                 thirdLevelManager.OnLionStatuePlaced();
             }
             Debug.Log("Lion statue placed on carpet.");
