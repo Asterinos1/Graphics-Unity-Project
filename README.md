@@ -21,6 +21,7 @@ Download the zip file and extract it, then run the executable 'Legend of Aria'
 - Use **LEFTSHIFT** to sprint
 - Use **SPACEBAR** to attack enemies.
 - Use **1 or 2** to swap between camera modes.
+- Use **R** to manually restart the level if you encounter bugs.
 
 ### Extras:
 This build of the project took me approximately 7-8 full days to complete.
