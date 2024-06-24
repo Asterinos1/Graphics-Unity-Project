@@ -12,7 +12,7 @@ Download the zip file and extract it, then run the executable 'Legend of Aria'
 ## About:
 - The theme of the game is cartoonish, medieval fantasy.
 - In this game you play as Aria, a female warrior who has to protect her city from bandits and place the lion statues on top of blue carpets. 
-- The bandits patrol the area and chase Aria to attack her. If she suffers damage she can pick up health potion scattered around each level to restore health. If she dies either by reaching 0 health or fall of the map ( Level 2) the level restarts
+- The bandits patrol the area and chase Aria to attack her. If she suffers damage she can pick up health potions, scattered around each level, to restore health. If she dies either by reaching 0 health or fall of the map ( Level 2) the level restarts
 - Each level is split into 2 parts. Eliminate all enemies and place all lion statues on top of blue carpets to proceed to the next part and finish the level. Every level is unique and no stats/items are transfered from one level to another
 - There is a total of 3 levels: Village (Introduction), Mountain, Castle
 
