@@ -21,7 +21,6 @@ public class Door : MonoBehaviour {
 		anim.SetBool ("DoorClose", true);
 
 	}
-
 	// Update is called once per frame
 	void Update () {
 		

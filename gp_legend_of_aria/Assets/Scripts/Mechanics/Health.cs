@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
 {
     public int health;
     public int numOfHearts;
-    public bool isEnemy;  // Flag to check if the entity is an enemy8896
+    public bool isEnemy;  // Flag to check if the entity is an enemy
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;

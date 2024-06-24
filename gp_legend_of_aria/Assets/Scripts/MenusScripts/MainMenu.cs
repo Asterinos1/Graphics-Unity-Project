@@ -82,9 +82,7 @@ public class MainMenu : MonoBehaviour
             if (buttonTextTMP != null)
             {
                 // Log the current and new button text
-                Debug.Log("Updating button text (TMP). Current text: " + buttonTextTMP.text);
                 buttonTextTMP.text = Screen.fullScreen ? "Fullscreen" : "Window";
-                Debug.Log("New button text (TMP): " + buttonTextTMP.text);
             }
             else
             {

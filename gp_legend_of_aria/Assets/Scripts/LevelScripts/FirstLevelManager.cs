@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class FirstLevelManager : MonoBehaviour
 {
     public AudioSource doorOpened;
-    
     private int enemyCount;
     private int initialEnemyCount;
     public Collider DoorCollider1;
@@ -28,14 +27,14 @@ public class FirstLevelManager : MonoBehaviour
     {
         enemyCount--;
         Debug.Log("Enemies remaining: " + enemyCount);
-        CheckDoorConditions();
+        //CheckDoorConditions();
     }
 
     public void OnLionStatuePlaced()
     {
         lionStatuesOnCarpetCount++;
         Debug.Log("Lion statues on carpets: " + lionStatuesOnCarpetCount);
-        CheckDoorConditions();
+        //CheckDoorConditions();
     }
 
     public void OnLionStatueRemoved()

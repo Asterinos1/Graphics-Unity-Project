@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
         // Hide the cursor
         //Cursor.visible = false;
         //Cursor.lockState = CursorLockMode.Locked;
-
         if (level == 1)
         {
             Debug.Log("Now entering Level 1");

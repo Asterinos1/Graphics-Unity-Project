@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(attackDelay);
 
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1.5f); // Adjust the radius as needed
+
         foreach (var hitCollider in hitColliders)
         {
             attackSound.Play();
@@ -93,7 +94,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-
         isAttacking = false;
     }
 }

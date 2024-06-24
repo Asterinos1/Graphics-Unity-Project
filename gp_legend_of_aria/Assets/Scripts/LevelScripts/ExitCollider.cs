@@ -4,7 +4,8 @@ public class ExitCollider : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Assuming the player has a tag "Player"
+        // We want only the player to activate the ExitCollider
+        if (other.CompareTag("Player"))
         {
             FirstLevelManager firstLevelManager = FindObjectOfType<FirstLevelManager>();
             SecondLevelManager secondLevelManager = FindObjectOfType<SecondLevelManager>();
@@ -13,7 +14,7 @@ public class ExitCollider : MonoBehaviour
             if (firstLevelManager != null)
             {
                 SceneManager.LoadScene("SecondLevel");
-               //GameManager.instance.LoadLevel(2);
+                //GameManager.instance.LoadLevel(2);
             }
             else if (secondLevelManager != null)
             {
@@ -27,6 +28,7 @@ public class ExitCollider : MonoBehaviour
                 SceneManager.LoadScene("MainMenu");
                 //GameManager.instance.LoadLevel(4);
             }
+            
             //Debug.Log("Exit collider touched. Loading next level.");
             //GameManager.instance.LoadNextLevel("SecondLevel");
         }

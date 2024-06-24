@@ -41,8 +41,9 @@ public class FloatingPotion : MonoBehaviour
             // Heal the player to full health
             healthScript.health = healthScript.numOfHearts;
 
-            // Optionally, you can add some visual or sound effects here to indicate the potion was picked up.
+            // Play the pick up sound
             potionSound.Play();
+            
             // Destroy the potion object after being picked up
             Destroy(gameObject);
         }

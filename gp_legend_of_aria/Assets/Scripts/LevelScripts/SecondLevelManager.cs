@@ -52,13 +52,12 @@ public class SecondLevelManager : MonoBehaviour
     {
         enemyCount--;
         Debug.Log("Enemies remaining: " + enemyCount);
-
         // Check if all enemies are killed
-        if (enemyCount == 0 && DoorCollider1 != null)
-        {
-            Debug.Log("All enemies killed. Opening door 1.");
-            Destroy(DoorCollider1.gameObject); // Remove the door collider
-        }
+        // if (enemyCount == 0 && DoorCollider1 != null)
+        // {
+        //     Debug.Log("All enemies killed. Opening door 1.");
+        //     Destroy(DoorCollider1.gameObject); // Remove the door collider
+        // }
     }
 
     public void OnLionStatuePlaced()

@@ -5,12 +5,16 @@ using UnityEngine;
 public class CarpetTrigger : MonoBehaviour
 {
     public AudioSource carpetSound;
-    public FirstLevelManager firstLevelManager;
-    public SecondLevelManager secondLevelManager;
-    public ThirdLevelManager thirdLevelManager;
+    // public FirstLevelManager firstLevelManager;
+    // public SecondLevelManager secondLevelManager;
+    // public ThirdLevelManager thirdLevelManager;
 
     private void OnTriggerEnter(Collider other)
     {
+        FirstLevelManager firstLevelManager = FindObjectOfType<FirstLevelManager>();
+        SecondLevelManager secondLevelManager = FindObjectOfType<SecondLevelManager>();
+        ThirdLevelManager thirdLevelManager = FindObjectOfType<ThirdLevelManager>();
+
         if (other.CompareTag("LionStatue"))
         {
             if (firstLevelManager != null)
@@ -34,6 +38,10 @@ public class CarpetTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        FirstLevelManager firstLevelManager = FindObjectOfType<FirstLevelManager>();
+        SecondLevelManager secondLevelManager = FindObjectOfType<SecondLevelManager>();
+        ThirdLevelManager thirdLevelManager = FindObjectOfType<ThirdLevelManager>();
+
         if (other.CompareTag("LionStatue"))
         {
             if (firstLevelManager != null)

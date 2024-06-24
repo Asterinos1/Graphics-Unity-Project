@@ -13,10 +13,10 @@ public class mainCameraController : MonoBehaviour
     {
         if (player != null)
         {
-            // Set the position of the camera based on player's position, the desired distance and height
+            // Set the position of the camera (height) based on player's position
             transform.position = player.position - new Vector3(0, -height, distance);
 
-            // Set the rotation of the camera to look at the player from the set angle
+            // Set the rotation of the camera
             transform.rotation = Quaternion.Euler(angle, 0, 0);
 
             // Always look at the player

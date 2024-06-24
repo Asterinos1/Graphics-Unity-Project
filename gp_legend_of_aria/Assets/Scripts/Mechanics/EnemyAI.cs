@@ -86,17 +86,20 @@ public class EnemyAI : MonoBehaviour
         agent.SetDestination(transform.position);
         animator.SetBool("isWalking", false);
         animator.SetBool("isRunning", false);
-        animator.SetBool("isAttacking", true); // Set attacking animation
+        animator.SetBool("isAttacking", false);
+
+        //animator.SetBool("isAttacking", true); // Set attacking animation
         
-        // Wait for 1 second before attacking
+        // Wait for 0.6 seconds before attacking
         yield return new WaitForSeconds(0.60f);
 
         if (Vector3.Distance(player.position, transform.position) <= attackRange)
         {
             //attack sound
             attackSound.Play();
+            animator.SetBool("isAttacking", true);
             AttackPlayer();
-            animator.SetBool("isAttacking", false); // Set attacking animation
+            //animator.SetBool("isAttacking", false); // Set attacking animation
         }
 
         isWaitingToAttack = false;
@@ -106,8 +109,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (Time.time - lastAttackTime >= attackDelay)
         {
-            // Implement your attack logic here, e.g., reducing player's health
-            Debug.Log("Attacking player");
+            //Debug.Log("Attacking player");
             lastAttackTime = Time.time;
 
             // Example to reduce player health, assuming player has a Health component

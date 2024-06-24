@@ -47,10 +47,10 @@ public class PauseMenuManager : MonoBehaviour
     public void QuitToMenu()
     {
         Debug.Log("Going to the Main Menu now..");
-        Time.timeScale = 1f; // Ensure time scale is reset when returning to the menu
+        Time.timeScale = 1f; //Rest time scale
         Cursor.visible = true; // Show the cursor in the main menu
         Cursor.lockState = CursorLockMode.None; // Unlock the cursor in the main menu
-        SceneManager.LoadScene("MainMenu"); // Replace with the name of your menu scene
+        SceneManager.LoadScene("MainMenu"); 
         //GameManager.instance.currentLevel=0;
     }
         public void ToggleMusic()
