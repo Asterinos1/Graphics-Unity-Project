@@ -29,7 +29,6 @@ This build of the project took me approximately 7-8 full days to complete.
 In the project report you can find all links of the assets I used for the project.
 
 ### Screenshots:
+![image](https://github.com/Asterinos1/Graphics-Unity-Project/assets/79656046/4aa28acd-1024-4151-8d41-b7d8483a6178)
 
-- ![image](https://github.com/Asterinos1/Graphics-Unity-Project/assets/79656046/4aa28acd-1024-4151-8d41-b7d8483a6178)
-
-
+![image](https://github.com/Asterinos1/Graphics-Unity-Project/assets/79656046/0c76a900-b01f-4893-9205-934de2354d92)
