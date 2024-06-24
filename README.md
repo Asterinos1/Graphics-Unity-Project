@@ -25,6 +25,9 @@ Download the zip file and extract it, then run the executable 'Legend of Aria'
 
 ### Extras:
 This build of the project took me approximately 7-8 full days to complete.
+- ![image](https://github.com/Asterinos1/Graphics-Unity-Project/assets/79656046/4aa28acd-1024-4151-8d41-b7d8483a6178)
+
+
 
 In the project report you can find all links of the assets I used for the project.
 
